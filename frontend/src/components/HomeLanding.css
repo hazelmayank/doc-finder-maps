@@ -1,0 +1,51 @@
+*{
+    padding:0;
+    margin: 0;
+   
+    box-sizing: border-box;
+}
+
+.home-landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4e9af1, #8fd3f4);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.home-btn {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #0077ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.home-btn:hover {
+  background-color: #0077ff;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
