@@ -1,4 +1,4 @@
-# Doc Finder Maps 🩺📍
+# Doctor Finder 🩺📍
 
 A simple web app that helps users find nearby clinics using Google Maps and Node.js.  
 Doctors can register their clinic location; patients can search clinics nearby or by area name.
