@@ -15,8 +15,9 @@ const center = {
 
 export default function DoctorForm() {
   const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: "AIzaSyDpsB3ZGhYmNC2AWotX34Tp87xotnO_ia8",
-  });
+  googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY,
+});
+
 
  
   const [markerPosition, setMarkerPosition] = useState(null);

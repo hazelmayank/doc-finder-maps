@@ -15,8 +15,9 @@ const defaultCenter = {
 
 export default function PatientSearch() {
   const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: "AIzaSyDpsB3ZGhYmNC2AWotX34Tp87xotnO_ia8",
-  });
+  googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY,
+});
+
 
   const [currentPosition, setCurrentPosition] = useState(null);
   const [doctors, setDoctors] = useState([]);
@@ -63,7 +64,8 @@ export default function PatientSearch() {
         {
           params: {
             address: searchArea,
-            key: "AIzaSyDpsB3ZGhYmNC2AWotX34Tp87xotnO_ia8",
+            key: import.meta.env.VITE_GOOGLE_MAPS_API_KEY,
+
           },
         }
       );
